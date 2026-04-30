@@ -36,10 +36,6 @@ nav a {
   font-size: 25px;
 }
 
-nav {
-  margin-left: 350px;
-}
-
 nav a:hover {
   color: #2aa6c8;
 }
