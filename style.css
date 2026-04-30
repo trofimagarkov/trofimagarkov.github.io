@@ -130,33 +130,33 @@ nav a:hover {
 .paper-item summary {
   list-style: none;
   cursor: pointer;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: 24px;
-  padding: 14px 8px;
+  padding: 14px 0;
 }
 
 .paper-item summary::-webkit-details-marker {
   display: none;
 }
 
-.paper-heading {
+.paper-text {
   font-size: 20px;
   line-height: 1.4;
   color: #222;
 }
 
-.paper-heading strong {
+.paper-text strong {
   font-weight: 700;
 }
 
-.paper-heading a {
+.paper-text a {
   color: #222;
   text-decoration: underline;
 }
 
-.paper-heading a:hover {
+.paper-text a:hover {
   color: #2aa6c8;
 }
 
@@ -167,7 +167,7 @@ nav a:hover {
   border-bottom: 3px solid #777;
   transform: rotate(45deg);
   transition: transform 0.2s ease, border-color 0.2s ease;
-  flex-shrink: 0;
+  justify-self: end;
   margin-right: 8px;
 }
 
@@ -180,7 +180,7 @@ nav a:hover {
 }
 
 .paper-abstract {
-  padding: 18px 12px 26px 12px;
+  padding: 16px 0 24px 0;
   font-size: 20px;
   line-height: 1.65;
   color: #111;
