@@ -151,4 +151,48 @@ nav a:hover {
   .content h1 {
     font-size: 32px;
   }
+
+  .paper-details {
+  border-bottom: 1px solid #666;
+  margin-bottom: 26px;
+  padding-bottom: 12px;
+}
+
+.paper-details summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.paper-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.paper-meta {
+  margin-left: 4px;
+}
+
+.arrow {
+  font-size: 26px;
+  color: #666;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.paper-details summary:hover .arrow {
+  color: #111;
+}
+
+.paper-details[open] .arrow {
+  transform: rotate(180deg);
+}
+
+.abstract {
+  margin-top: 14px;
+  padding-right: 30px;
+}
+  
 }
