@@ -6,7 +6,7 @@ body {
   font-size: 20px;
   line-height: 1.55;
 }
- 
+
 /* top bar */
 
 header {
@@ -119,6 +119,73 @@ nav a:hover {
   color: #2aa6c8;
 }
 
+/* expandable paper items */
+
+.paper-item {
+  border-bottom: 1px solid #777;
+  padding: 0;
+  margin: 0 0 28px 0;
+}
+
+.paper-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 8px;
+}
+
+.paper-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.paper-heading {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #222;
+}
+
+.paper-heading strong {
+  font-weight: 700;
+}
+
+.paper-heading a {
+  color: #222;
+  text-decoration: underline;
+}
+
+.paper-heading a:hover {
+  color: #2aa6c8;
+}
+
+.paper-arrow {
+  width: 14px;
+  height: 14px;
+  border-right: 3px solid #777;
+  border-bottom: 3px solid #777;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+
+.paper-item summary:hover .paper-arrow {
+  border-color: #111;
+}
+
+.paper-item[open] .paper-arrow {
+  transform: rotate(225deg);
+}
+
+.paper-abstract {
+  padding: 18px 12px 26px 12px;
+  font-size: 20px;
+  line-height: 1.65;
+  color: #111;
+}
+
 /* mobile */
 
 @media (max-width: 900px) {
@@ -152,47 +219,11 @@ nav a:hover {
     font-size: 32px;
   }
 
-  .paper-details {
-  border-bottom: 1px solid #666;
-  margin-bottom: 26px;
-  padding-bottom: 12px;
-}
+  .paper-heading {
+    font-size: 18px;
+  }
 
-.paper-details summary {
-  list-style: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 10px 0;
-}
-
-.paper-details summary::-webkit-details-marker {
-  display: none;
-}
-
-.paper-meta {
-  margin-left: 4px;
-}
-
-.arrow {
-  font-size: 26px;
-  color: #666;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.paper-details summary:hover .arrow {
-  color: #111;
-}
-
-.paper-details[open] .arrow {
-  transform: rotate(180deg);
-}
-
-.abstract {
-  margin-top: 14px;
-  padding-right: 30px;
-}
-  
+  .paper-abstract {
+    font-size: 18px;
+  }
 }
