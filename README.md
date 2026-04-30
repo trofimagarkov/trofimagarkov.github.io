@@ -1,1 +1,0 @@
-# trofimagarkov.github.io
