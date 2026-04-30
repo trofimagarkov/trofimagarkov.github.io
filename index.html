@@ -7,78 +7,176 @@
 
   <style>
     body {
-      font-family: Georgia, "Times New Roman", serif;
-      max-width: 800px;
-      margin: 60px auto;
-      line-height: 1.7;
-      color: #222;
-      padding: 0 20px;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111;
+      background: white;
+      font-size: 24px;
+      line-height: 1.45;
     }
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 5px;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 26px;
+      border-bottom: 1px solid #ccc;
     }
 
-    h2 {
-      margin-top: 40px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
+    .name {
+      font-weight: bold;
+      font-size: 24px;
     }
 
-    a {
-      color: #1a5fb4;
+    nav a {
+      margin-left: 42px;
+      color: black;
       text-decoration: none;
+      font-size: 24px;
     }
 
-    a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
 
-    .subtitle {
-      color: #555;
-      margin-bottom: 30px;
+    main {
+      display: flex;
+      gap: 28px;
+      padding: 24px;
+      max-width: 1350px;
+    }
+
+    .photo-column {
+      width: 300px;
+      flex-shrink: 0;
+    }
+
+    .photo-column img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      font-weight: bold;
+      margin-top: 8px;
+      font-size: 24px;
+    }
+
+    .content {
+      max-width: 950px;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin: 0 0 16px 0;
+      color: #07364a;
+      text-decoration: underline;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-top: 34px;
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: #07364a;
+      text-decoration: underline;
     }
 
     .paper {
-      margin-bottom: 20px;
+      margin-bottom: 28px;
+    }
+
+    .paper-title {
+      font-weight: bold;
+      color: #07364a;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 12px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 24px;
+      }
+
+      main {
+        flex-direction: column;
+      }
+
+      .photo-column {
+        width: 100%;
+        max-width: 320px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Trofim Agarkov</h1>
-  <div class="subtitle">
-    PhD Student in Economics<br>
-    University of Glasgow
-  </div>
+  <header>
+    <div class="name">Trofim Agarkov</div>
 
-  <h2>Research</h2>
+    <nav>
+      <a href="https://trofimagarkov.com/">Home</a>
+      <a href="https://trofimagarkov.com/cv.html">CV</a>
+      <a href="https://trofimagarkov.com/research.html">Research</a>
+    </nav>
+  </header>
 
-  <div class="paper">
-    <strong>The Cost of a Gap Year: Delaying Higher Education and Career Outcomes</strong><br>
-    <em>Working paper</em>
-  </div>
+  <main>
+    <div class="photo-column">
+      <img src="photo.jpg" alt="Trofim Agarkov">
+      <div class="caption">Trofim Agarkov</div>
+    </div>
 
-  <h2>Work in Progress</h2>
+    <div class="content">
+      <h1>Welcome</h1>
 
-  <div class="paper">
-    Exact Parametric Causal Mediation Analysis with a Categorical Mediator
-  </div>
+      <p>
+        I am a PhD student in Economics at the Adam Smith Business School,
+        University of Glasgow.
+      </p>
 
-  <h2>Teaching</h2>
+      <p>
+        My research interests are in labour economics, education economics,
+        applied econometrics, and causal inference.
+      </p>
 
-  <p>
-    Tutor in Microeconomics, Statistics, and Bayesian Data Analysis at the University of Glasgow.
-  </p>
+      <h2>Contact:</h2>
+      <p>
+        Email: your.email@glasgow.ac.uk
+      </p>
 
-  <h2>Contact</h2>
+      <h2>Research:</h2>
 
-  <p>
-    Email: your.email@domain.com<br>
-    GitHub: <a href="https://github.com/trofimagarkov">github.com/trofimagarkov</a>
-  </p>
+      <div class="paper">
+        <span class="paper-title">
+          The Cost of a Gap Year: Delaying Higher Education and Career Outcomes
+        </span>
+        <br>
+        Working paper
+      </div>
+
+      <div class="paper">
+        <span class="paper-title">
+          Exact Parametric Causal Mediation Analysis with a Categorical Mediator
+        </span>
+        <br>
+        Work in progress
+      </div>
+    </div>
+  </main>
 
 </body>
 </html>
