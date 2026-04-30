@@ -11,8 +11,8 @@
       font-family: Arial, Helvetica, sans-serif;
       color: #111;
       background: white;
-      font-size: 24px;
-      line-height: 1.45;
+      font-size: 20px;
+      line-height: 1.6;
     }
 
     header {
@@ -29,10 +29,10 @@
     }
 
     nav a {
-      margin-left: 42px;
+      margin-left: 30px;
       color: black;
       text-decoration: none;
-      font-size: 24px;
+      font-size: 20px;
     }
 
     nav a:hover {
@@ -41,82 +41,63 @@
 
     main {
       display: flex;
-      gap: 28px;
-      padding: 24px;
-      max-width: 1350px;
+      gap: 30px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .photo-column {
-      width: 300px;
+      width: 260px;
       flex-shrink: 0;
     }
 
     .photo-column img {
       width: 100%;
       height: auto;
-      display: block;
     }
 
     .caption {
       font-weight: bold;
       margin-top: 8px;
-      font-size: 24px;
     }
 
     .content {
-      max-width: 950px;
+      max-width: 800px;
     }
 
     h1 {
-      font-size: 34px;
-      margin: 0 0 16px 0;
+      font-size: 32px;
+      margin-bottom: 10px;
       color: #07364a;
-      text-decoration: underline;
     }
 
     h2 {
-      font-size: 26px;
-      margin-top: 34px;
-      margin-bottom: 12px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 24px;
     }
 
     a {
       color: #07364a;
-      text-decoration: underline;
     }
 
     .paper {
-      margin-bottom: 28px;
+      margin-bottom: 20px;
     }
 
     .paper-title {
       font-weight: bold;
-      color: #07364a;
-      text-decoration: underline;
     }
 
     @media (max-width: 800px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        margin-top: 12px;
-      }
-
-      nav a {
-        margin-left: 0;
-        margin-right: 24px;
-      }
-
       main {
         flex-direction: column;
       }
 
-      .photo-column {
-        width: 100%;
-        max-width: 320px;
+      nav a {
+        margin-left: 0;
+        margin-right: 20px;
       }
     }
   </style>
@@ -128,9 +109,9 @@
     <div class="name">Trofim Agarkov</div>
 
     <nav>
-  <a href="/">Home</a>
-  <a href="/cv/">CV</a>
-  <a href="/research">Research</a>
+      <a href="/">Home</a>
+      <a href="/cv/">CV</a>
+      <a href="/research">Research</a>
     </nav>
   </header>
 
@@ -153,28 +134,25 @@
         applied econometrics, and causal inference.
       </p>
 
-      <h2>Contact:</h2>
-      <p>
-        Email: your.email@glasgow.ac.uk
-      </p>
+      <h2>Contact</h2>
+      <p>Email: your.email@glasgow.ac.uk</p>
 
-      <h2>Research:</h2>
+      <h2>Research</h2>
 
       <div class="paper">
-        <span class="paper-title">
+        <div class="paper-title">
           The Cost of a Gap Year: Delaying Higher Education and Career Outcomes
-        </span>
-        <br>
-        Working paper
+        </div>
+        <div>Working paper</div>
       </div>
 
       <div class="paper">
-        <span class="paper-title">
+        <div class="paper-title">
           Exact Parametric Causal Mediation Analysis with a Categorical Mediator
-        </span>
-        <br>
-        Work in progress
+        </div>
+        <div>Work in progress</div>
       </div>
+
     </div>
   </main>
 
