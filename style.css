@@ -238,18 +238,10 @@ nav a:hover {
   color: #111;
 }
 
-.job-header {
+.job-row {
   display: flex;
-  justify-content: space-between;
-  gap: 24px;
+  gap: 18px;
   align-items: flex-start;
-  margin-bottom: 16px;
-}
-
-.job-left {
-  display: flex;
-  gap: 16px;
-  align-items: center;
 }
 
 .job-logo {
@@ -273,19 +265,33 @@ nav a:hover {
   background: #1d4f91;
 }
 
-.job-title-block h3 {
+.job-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.job-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.job-title-row h3 {
   margin: 0;
   font-size: 24px;
   font-weight: normal;
   color: #111;
 }
 
-.job-title-block h3 strong {
+.job-title-row h3 strong {
   font-weight: 700;
 }
 
-.job-title-block h3 em {
+.job-title-row h3 em {
   font-style: italic;
+  font-weight: normal;
 }
 
 .job-date {
@@ -296,7 +302,7 @@ nav a:hover {
 
 .job-list {
   margin: 0;
-  padding-left: 72px;
+  padding-left: 24px;
 }
 
 .job-list li {
@@ -307,6 +313,11 @@ nav a:hover {
   color: #666;
   font-weight: normal;
   margin-right: 8px;
+}
+
+.course-name {
+  color: #111;
+  font-weight: 700;
 }
 
 /* mobile */
@@ -358,21 +369,22 @@ nav a:hover {
     padding: 20px;
   }
 
-    .job-header {
+  .job-row {
+    display: flex;
+    gap: 14px;
+  }
+
+  .job-title-row {
     display: block;
   }
 
-  .job-left {
-    align-items: center;
-  }
-
   .job-date {
-    margin-top: 10px;
-    padding-left: 62px;
+    display: block;
+    margin-top: 8px;
   }
 
   .job-list {
-    padding-left: 24px;
-    margin-top: 16px;
+    padding-left: 22px;
+    margin-top: 14px;
   }
 }
