@@ -102,6 +102,13 @@ nav a:hover {
   color: #2aa6c8;
 }
 
+.sidebar-icon {
+  width: 24px;
+  margin-right: 8px;
+  color: #494e52;
+  text-align: center;
+}
+
 /* main content */
 
 .content {
