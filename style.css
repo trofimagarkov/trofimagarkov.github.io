@@ -257,7 +257,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-top: -8px;
+  margin-top: -16px;
 }
 
 .uofg-logo {
@@ -297,7 +297,7 @@ nav a:hover {
 .job-title-row h3 em {
   font-style: italic;
   font-weight: normal;
-  margin-left: 8px;
+  margin-left: 16px;
 }
 
 .job-date {
