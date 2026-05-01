@@ -128,6 +128,11 @@ nav a:hover {
 }
 
 .content a {
+  color: #222;
+  text-decoration: underline;
+}
+
+.content a:hover {
   color: #2aa6c8;
 }
 
