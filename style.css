@@ -331,6 +331,46 @@ nav a:hover {
   font-weight: normal;
 }
 
+.sidebar-copy-line {
+  margin: -8px 0 14px 36px;
+  font-size: 15px;
+}
+
+.copy-email-button {
+  border: none;
+  background: none;
+  padding: 0;
+  color: #111;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.copy-email-button:hover {
+  color: #2aa6c8;
+}
+
+.copy-toast {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  background: #111;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 9999;
+}
+
+.copy-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* mobile */
 
 @media (max-width: 900px) {
