@@ -394,15 +394,15 @@ nav a:hover {
   }
 
   .simple-card-header {
-  display: block;
-}
+    display: block;
+  }
 
-.simple-card-date {
-  display: block;
-  margin-top: 8px;
-}
+  .simple-card-date {
+    display: block;
+    margin-top: 8px;
+  }
 
-.simple-card {
-  padding: 20px;
-}
+  .simple-card {
+    padding: 20px;
+  }
 }
