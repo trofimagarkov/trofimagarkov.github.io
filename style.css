@@ -198,6 +198,16 @@ nav a:hover {
   color: #111;
 }
 
+.interest-list {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 24px;
+}
+
+.interest-list li {
+  margin-bottom: 6px;
+}
+
 /* mobile */
 
 @media (max-width: 900px) {
