@@ -316,6 +316,10 @@ nav a:hover {
   margin-bottom: 8px;
 }
 
+.job-list li:last-child {
+  margin-bottom: 0;
+}
+
 .course-code {
   color: #666;
   font-weight: normal;
