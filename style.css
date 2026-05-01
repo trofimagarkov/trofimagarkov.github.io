@@ -271,6 +271,59 @@ nav a:hover {
   color: #222;
 }
 
+/* simple teaching / experience cards */
+
+.simple-card {
+  box-sizing: border-box;
+  border: 1px solid #d8e0ea;
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin: 26px 0;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.simple-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: baseline;
+  margin-bottom: 18px;
+}
+
+.simple-card-header h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #003865;
+  font-weight: normal;
+}
+
+.simple-card-date {
+  font-size: 16px;
+  font-style: italic;
+  color: #222;
+  white-space: nowrap;
+}
+
+.simple-course-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.simple-course-list li {
+  margin-bottom: 8px;
+}
+
+.course-code {
+  color: #666;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.course-name {
+  color: #222;
+}
+
 /* mobile */
 
 @media (max-width: 900px) {
@@ -331,4 +384,17 @@ nav a:hover {
   .info-card {
     padding: 20px;
   }
+
+  .simple-card-header {
+  display: block;
+}
+
+.simple-card-date {
+  display: block;
+  margin-top: 8px;
+}
+
+.simple-card {
+  padding: 20px;
+}
 }
