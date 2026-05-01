@@ -294,14 +294,22 @@ nav a:hover {
 .simple-card-header h3 {
   margin: 0;
   font-size: 24px;
-  color: #003865;
+  color: #111;
   font-weight: normal;
 }
 
-.simple-card-date {
-  font-size: 16px;
+.simple-card-header h3 strong {
+  font-weight: 700;
+}
+
+.simple-card-header h3 em {
   font-style: italic;
-  color: #222;
+}
+
+.simple-card-date {
+  font-size: 20px;
+  font-style: normal;
+  color: #111;
   white-space: nowrap;
 }
 
@@ -316,12 +324,12 @@ nav a:hover {
 
 .course-code {
   color: #666;
-  font-weight: 600;
+  font-weight: normal;
   margin-right: 8px;
 }
 
 .course-name {
-  color: #222;
+  color: #111;
 }
 
 /* mobile */
