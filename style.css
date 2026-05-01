@@ -201,11 +201,13 @@ nav a:hover {
 /* cards / teaching sections */
 
 .info-card {
+  box-sizing: border-box;
   border: 1px solid #d8e0ea;
   border-radius: 10px;
   padding: 24px 28px;
   margin: 26px 0;
   background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
 .card-header {
@@ -232,6 +234,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .card-header h3 {
@@ -262,6 +265,10 @@ nav a:hover {
 
 .course-list li {
   margin-bottom: 10px;
+}
+
+.course-list li strong {
+  color: #222;
 }
 
 /* mobile */
@@ -309,8 +316,12 @@ nav a:hover {
     font-size: 18px;
   }
 
-    .card-header {
+  .card-header {
     display: block;
+  }
+
+  .card-title-left {
+    align-items: center;
   }
 
   .card-date {
