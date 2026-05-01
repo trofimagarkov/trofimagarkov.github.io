@@ -38,10 +38,16 @@
       University of Glasgow
     </p>
 
-    <p class="sidebar-link">
-      <i class="fa-solid fa-envelope sidebar-icon"></i>
-      <a href="mailto:Trofim.Agarkov@glasgow.ac.uk">Email</a>
-    </p>
+<p class="sidebar-link">
+  <i class="fa-solid fa-envelope sidebar-icon"></i>
+  <a href="mailto:Trofim.Agarkov@glasgow.ac.uk">Email</a>
+</p>
+
+<p class="sidebar-copy-line">
+  <button class="copy-email-button" onclick="copyEmail()">
+    [click to copy email address]
+  </button>
+</p>
 
     <p class="sidebar-link">
       <i class="fa-brands fa-linkedin sidebar-icon"></i>
@@ -133,5 +139,23 @@ gap years show little effect. The findings highlight the importance of gap-year 
 
 </div>
 
+  <div id="copy-toast" class="copy-toast">
+  ✓ Email address copied to clipboard
+</div>
+
+<script>
+  function copyEmail() {
+    navigator.clipboard.writeText("Trofim.Agarkov@glasgow.ac.uk").then(function () {
+      const toast = document.getElementById("copy-toast");
+      toast.classList.add("show");
+
+      setTimeout(function () {
+        toast.classList.remove("show");
+      }, 2200);
+    });
+  }
+</script>
+
+  
 </body>
 </html>
