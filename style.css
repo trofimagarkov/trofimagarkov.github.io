@@ -232,6 +232,83 @@ nav a:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
+/* job / teaching cards */
+
+.job-card {
+  color: #111;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.job-left {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.job-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 6px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.uofg-logo {
+  background: #003865;
+}
+
+.hse-logo {
+  background: #1d4f91;
+}
+
+.job-title-block h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  color: #111;
+}
+
+.job-title-block h3 strong {
+  font-weight: 700;
+}
+
+.job-title-block h3 em {
+  font-style: italic;
+}
+
+.job-date {
+  font-size: 20px;
+  color: #111;
+  white-space: nowrap;
+}
+
+.job-list {
+  margin: 0;
+  padding-left: 72px;
+}
+
+.job-list li {
+  margin-bottom: 8px;
+}
+
+.course-code {
+  color: #666;
+  font-weight: normal;
+  margin-right: 8px;
+}
+
 /* mobile */
 
 @media (max-width: 900px) {
@@ -279,5 +356,23 @@ nav a:hover {
 
     .content-card {
     padding: 20px;
+  }
+
+    .job-header {
+    display: block;
+  }
+
+  .job-left {
+    align-items: center;
+  }
+
+  .job-date {
+    margin-top: 10px;
+    padding-left: 62px;
+  }
+
+  .job-list {
+    padding-left: 24px;
+    margin-top: 16px;
   }
 }
