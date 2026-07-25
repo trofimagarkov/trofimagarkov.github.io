@@ -5,35 +5,23 @@
   <title>Trofim Agarkov</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link
-    rel="stylesheet"
-    href="https://www.trofimagarkov.com/style.css"
-  >
-
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  >
+  <!-- IMPORTANT: absolute path so it works on all pages -->
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
 <header>
   <div class="site-title">
-    <a href="https://www.trofimagarkov.com/">Trofim Agarkov</a>
+    <a href="/">Trofim Agarkov</a>
   </div>
 
   <nav>
-    <a href="https://www.trofimagarkov.com/">Home</a>
-    <a href="https://www.trofimagarkov.com/research/">Research</a>
-    <a href="https://www.trofimagarkov.com/teaching/">Teaching</a>
-    <a
-      href="https://www.trofimagarkov.com/Trofim_Agarkov_CV.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      CV
-    </a>
+    <a href="/">Home</a>
+    <a href="/research/">Research</a>
+    <a href="/teaching/">Teaching</a>
+    <a href="/Trofim_Agarkov_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
   </nav>
 </header>
 
@@ -41,11 +29,7 @@
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
-    <img
-      src="/Trofim_Agarkov.jpg"
-      alt="Trofim Agarkov"
-      class="profile-photo"
-    >
+    <img src="/Trofim_Agarkov.jpg" alt="Trofim Agarkov" class="profile-photo">
 
     <h2>Trofim Agarkov</h2>
 
@@ -54,16 +38,16 @@
       University of Glasgow
     </p>
 
-    <p class="sidebar-link">
-      <i class="fa-solid fa-envelope sidebar-icon"></i>
-      <a href="mailto:Trofim.Agarkov@glasgow.ac.uk">Email</a>
-    </p>
+<p class="sidebar-link">
+  <i class="fa-solid fa-envelope sidebar-icon"></i>
+  <a href="mailto:Trofim.Agarkov@glasgow.ac.uk">Email</a>
+</p>
 
-    <p class="sidebar-copy-line">
-      <button class="copy-email-button" onclick="copyEmail()">
-        [click to copy email address]
-      </button>
-    </p>
+<p class="sidebar-copy-line">
+  <button class="copy-email-button" onclick="copyEmail()">
+    [click to copy email address]
+  </button>
+</p>
 
     <p class="sidebar-link">
       <i class="fa-brands fa-linkedin sidebar-icon"></i>
@@ -77,188 +61,142 @@
 
     <p class="sidebar-link">
       <i class="fa-solid fa-link sidebar-icon"></i>
-      <a href="https://www.trofimagarkov.com/">Website</a>
+      <a href="https://www.trofimagarkov.com">Website</a>
     </p>
+
   </aside>
 
   <!-- MAIN CONTENT -->
   <main class="content">
+    
+<h1>Welcome!</h1>
 
-    <h1>Welcome!</h1>
+<p>
+  I am a PhD student in Economics at the Adam Smith Business School,
+  University of Glasgow. I conduct research under the supervision of
+  <a href="https://www.gla.ac.uk/schools/business/staff/anwenzhang/">Anwen Zhang</a>,
+  <a href="https://www.gla.ac.uk/schools/business/staff/santiagomontoyablandon/">Santiago Montoya-Blandon</a>,
+  and
+  <a href="https://www.gla.ac.uk/schools/business/staff/tanyawilson/">Tanya Wilson</a>.
+  Please see my featured projects below and visit my
+<a href="https://www.trofimagarkov.com/research/">research page</a>
+for more details.
+</p>
 
-    <p>
-      I am a PhD student in Economics at the Adam Smith Business School,
-      University of Glasgow. I conduct research under the supervision of
-      <a href="https://www.gla.ac.uk/schools/business/staff/anwenzhang/">
-        Anwen Zhang
-      </a>,
-      <a href="https://www.gla.ac.uk/schools/business/staff/santiagomontoyablandon/">
-        Santiago Montoya-Blandon
-      </a>,
-      and
-      <a href="https://www.gla.ac.uk/schools/business/staff/tanyawilson/">
-        Tanya Wilson
-      </a>.
-      Please see my featured projects below and visit my
-      <a href="https://www.trofimagarkov.com/research/">
-        research page
-      </a>
-      for more details.
-    </p>
+<h1>Research interests</h1>
 
-    <h1>Research interests</h1>
+<ul class="interest-list">
+  <li>Labour Economics</li>
+  <li>Education Economics</li>
+  <li>Applied Econometrics</li>
+</ul>
 
-    <ul class="interest-list">
-      <li>Labour Economics</li>
-      <li>Education Economics</li>
-      <li>Applied Econometrics</li>
-    </ul>
+<h1>Working papers</h1>
 
-    <!-- WORKING PAPERS -->
-    <h1>Working papers</h1>
+<details class="paper-item">
+  <summary>
+    <span class="paper-text">
+      <strong>Exact Parametric Causal Mediation Analysis with a Categorical Mediator</strong>
+      with <a href="https://www.gla.ac.uk/schools/business/staff/santiagomontoyablandon/">Santiago Montoya-Blandon</a>
+    </span>
 
-    <details class="paper-item">
-      <summary>
-        <span class="paper-text">
-          <strong>
-            Exact Parametric Causal Mediation Analysis with a Categorical Mediator
-          </strong>
-          with
-          <a href="https://www.gla.ac.uk/schools/business/staff/santiagomontoyablandon/">
-            Santiago Montoya-Blandon
-          </a>
-        </span>
+    <span class="paper-arrow"></span>
+  </summary>
 
-        <span class="paper-arrow"></span>
-      </summary>
+  <div class="paper-abstract">
+    This paper develops a parametric framework for causal mediation analysis with nominal categorical
+mediators, such as occupation, education, or sector. Building on Imai et al. (2010), I derive closed-form 
+expressions for the direct and indirect effects on the natural outcome scale, with the indirect effect
+decomposed additively by mediator category. The paper also clarifies the relationship with inverse odds
+ratio weighting, highlighting its strengths and limitations. Simulations show that the proposed approach
+performs well, especially when treatment-mediator interactions are present.
+  </div>
+</details>
 
-      <div class="paper-abstract">
-        This paper develops a parametric framework for causal mediation analysis
-        with nominal categorical mediators, such as occupation, education, or
-        sector. Building on Imai et al. (2010), I derive closed-form expressions
-        for the direct and indirect effects on the natural outcome scale, with
-        the indirect effect decomposed additively by mediator category. The paper
-        also clarifies the relationship with inverse odds ratio weighting,
-        highlighting its strengths and limitations. Simulations show that the
-        proposed approach performs well, especially when treatment-mediator
-        interactions are present.
-      </div>
-    </details>
+<details class="paper-item">
+  <summary>
+    <span class="paper-text">
+      <strong>The Cost of a Gap Year: Education Delay and Career Outcomes</strong>
+      with <a href="https://www.gla.ac.uk/schools/business/staff/anwenzhang/">Anwen Zhang</a> 
+      and <a href="https://www.gla.ac.uk/schools/business/staff/santiagomontoyablandon/">Santiago Montoya-Blandon</a>
+    </span>
 
-    <details class="paper-item">
-      <summary>
-        <span class="paper-text">
-          <strong>
-            The Cost of a Gap Year: Education Delay and Career Outcomes
-          </strong>
-          with
-          <a href="https://www.gla.ac.uk/schools/business/staff/anwenzhang/">
-            Anwen Zhang
-          </a>
-          and
-          <a href="https://www.gla.ac.uk/schools/business/staff/santiagomontoyablandon/">
-            Santiago Montoya-Blandon
-          </a>
-        </span>
+    <span class="paper-arrow"></span>
+  </summary>
 
-        <span class="paper-arrow"></span>
-      </summary>
+  <div class="paper-abstract">
+    This paper examines the association between taking a gap year before higher education and early-career
+earnings in the UK. Using the Next Steps cohort linked to administrative school records, I compare students
+who defer university entry with those who enrol immediately, using OLS, matching, and sensitivity analyses.
+Gap-year participation is associated with lower earnings at ages 25 and 32, though the penalty declines over
+time. The effects are largest for unplanned and non-labour-market gap years, while labour-market-oriented
+gap years show little effect. The findings highlight the importance of gap-year type for long-term outcomes.
+  </div>
+</details>
 
-      <div class="paper-abstract">
-        This paper examines the association between taking a gap year before
-        higher education and early-career earnings in the UK. Using the Next
-        Steps cohort linked to administrative school records, I compare students
-        who defer university entry with those who enrol immediately, using OLS,
-        matching, and sensitivity analyses. Gap-year participation is associated
-        with lower earnings at ages 25 and 32, though the penalty declines over
-        time. The effects are largest for unplanned and non-labour-market gap
-        years, while labour-market-oriented gap years show little effect. The
-        findings highlight the importance of gap-year type for long-term
-        outcomes.
-      </div>
-    </details>
+<h1>Work in progress</h1>
 
-    <!-- WORK IN PROGRESS -->
-    <h1>Work in progress</h1>
+<details class="paper-item">
+  <summary>
+    <span class="paper-text">
+      <strong>When Shorter Lists Help: Constrained Sequential School Choice</strong>
+    </span>
 
-    <details class="paper-item">
-      <summary>
-        <span class="paper-text">
-          <strong>
-            When Shorter Lists Help: Constrained Sequential School Choice
-          </strong>
-        </span>
+    <span class="paper-arrow"></span>
+  </summary>
 
-        <span class="paper-arrow"></span>
-      </summary>
+  <div class="paper-abstract">
+    Real-world school choice systems almost universally cap the number of schools students may rank, yet the
+theory of constrained school choice has been developed only for simultaneous, one-shot applications
+(Haeringer and Klijn, 2009). At the same time, a growing literature studies school choice as a sequential
+game in which students observe earlier applications before submitting their own (Dur, Hammond and Kesten,
+2021), but without constraints. This paper combines the two: I study sequential school choice under
+list-length constraints, characterising equilibrium outcomes of the Boston mechanism, Deferred Acceptance,
+and Top Trading Cycles as the constraint varies. The interaction turns out to be far from neutral: the three
+mechanisms respond to the constraint in sharply different ways, and a binding constraint can act as a
+commitment device with real welfare consequences.
+  </div>
+</details>
 
-      <div class="paper-abstract">
-        Real-world school choice systems almost universally cap the number of
-        schools students may rank, yet the theory of constrained school choice
-        has been developed only for simultaneous, one-shot applications
-        (Haeringer and Klijn, 2009). At the same time, a growing literature
-        studies school choice as a sequential game in which students observe
-        earlier applications before submitting their own (Dur, Hammond and
-        Kesten, 2021), but without constraints. This paper combines the two:
-        I study sequential school choice under list-length constraints,
-        characterising equilibrium outcomes of the Boston mechanism, Deferred
-        Acceptance, and Top Trading Cycles as the constraint varies. The
-        interaction turns out to be far from neutral: the three mechanisms
-        respond to the constraint in sharply different ways, and a binding
-        constraint can act as a commitment device with real welfare
-        consequences.
-      </div>
-    </details>
+<details class="paper-item">
+  <summary>
+    <span class="paper-text">
+      <strong>Safety in Numbers? Application Portfolios with Endogenous Cutoffs</strong>
+    </span>
 
-    <details class="paper-item">
-      <summary>
-        <span class="paper-text">
-          <strong>
-            Safety in Numbers? Application Portfolios with Endogenous Cutoffs
-          </strong>
-        </span>
+    <span class="paper-arrow"></span>
+  </summary>
 
-        <span class="paper-arrow"></span>
-      </summary>
+  <div class="paper-abstract">
+    Applicants hedge—a reach, a match, a safety. But a college is only a safety relative to where this year's
+admission cutoffs land, and those cutoffs are set by where everyone else applies. This paper studies
+application portfolios in a large market in which students know their own exam score but not the cutoffs,
+which fluctuate with cohort size and capacity. Because hedging is what determines cutoffs, safety is
+endogenous: insuring against a strong cohort raises the cutoffs at precisely the colleges applicants retreat
+toward. I characterise equilibrium portfolios and show that whether hedging creates value or merely wastes
+seats depends on whether declined offers are recycled.
+  </div>
+</details>
 
-      <div class="paper-abstract">
-        Applicants hedge: a reach, a match, a safety. But a college is only a
-        safety relative to where this year's admission cutoffs land, and those
-        cutoffs are set by where everyone else applies. This paper studies
-        application portfolios in a large market in which students know their
-        own exam score but not the cutoffs, which fluctuate with cohort size and
-        capacity. Because hedging is what determines cutoffs, safety is
-        endogenous: insuring against a strong cohort raises the cutoffs at
-        precisely the colleges applicants retreat toward. I characterise
-        equilibrium portfolios and show that whether hedging creates value or
-        merely wastes seats depends on whether declined offers are recycled.
-      </div>
-    </details>
+<details class="paper-item">
+  <summary>
+    <span class="paper-text">
+      <strong>Stable but Unreachable: Decision Risk in Decentralised College Admissions</strong>
+    </span>
 
-    <details class="paper-item">
-      <summary>
-        <span class="paper-text">
-          <strong>
-            Stable but Unreachable: Decision Risk in Decentralised College Admissions
-          </strong>
-        </span>
+    <span class="paper-arrow"></span>
+  </summary>
 
-        <span class="paper-arrow"></span>
-      </summary>
-
-      <div class="paper-abstract">
-        In decentralised college admissions, students must commit to one offer
-        before knowing how rivals will act or how they will be graded, and can
-        therefore be wrong. We call this decision risk and show that it is
-        identically zero under any strategy-proof centralised mechanism: the
-        benchmark is a theorem, not an estimated counterfactual. Characterising
-        the admissions game, we measure risk over stable matchings using
-        confirmation weights—the chance that a higher-ranked rival actually
-        contests a seat. We characterise how risk varies across stable outcomes
-        and with the information available to students, and show that the
-        measure is estimable from administrative data.
-      </div>
-    </details>
+  <div class="paper-abstract">
+    In decentralised college admissions, students must commit to one offer before knowing how rivals will act
+or how they will be graded, and can therefore be wrong. We call this decision risk, and show it is identically
+zero under any strategy-proof centralised mechanism: the benchmark is a theorem, not an estimated
+counterfactual. Characterising the admissions game, we measure risk over stable matchings using confirmation
+weights—the chance a higher-ranked rival actually contests a seat. We characterise how risk varies across
+stable outcomes and with the information available to students, and show the measure is estimable from
+administrative data.
+  </div>
+</details>
 
   </main>
 
@@ -270,16 +208,14 @@
 
 <script>
   function copyEmail() {
-    navigator.clipboard
-      .writeText("Trofim.Agarkov@glasgow.ac.uk")
-      .then(function () {
-        const toast = document.getElementById("copy-toast");
-        toast.classList.add("show");
+    navigator.clipboard.writeText("Trofim.Agarkov@glasgow.ac.uk").then(function () {
+      const toast = document.getElementById("copy-toast");
+      toast.classList.add("show");
 
-        setTimeout(function () {
-          toast.classList.remove("show");
-        }, 2200);
-      });
+      setTimeout(function () {
+        toast.classList.remove("show");
+      }, 2200);
+    });
   }
 </script>
 
